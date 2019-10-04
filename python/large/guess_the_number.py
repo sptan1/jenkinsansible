@@ -18,10 +18,11 @@ while again == "Y" :
         if i== 5:
             print("You ran out of guesses!")
         
-        
-    
-    again = str(input("Do you want to play again (Y or N)? "))
-    if again == "Y": 
-        i = 0
-    elif again != "Y":
-        print("Bye!")
+    again = ""
+    while again != "Y" and again != "N" :
+        again = input("Do you want to play again (Y or N)? ")
+        if again == "Y": 
+            i = 0
+        elif again == "N":
+            print("Bye!")
+            
