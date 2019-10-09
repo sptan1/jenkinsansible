@@ -26,7 +26,12 @@ for i in range(n):
 		temp.append(x)
 	list3.append(temp)
 
-print("The first matrix is : ", list1)
-print("The second matrix is : ", list2)
-print("Result is : ", list3)
-
+print("The first matrix is : ")
+for row in list1:
+	print(row)
+print("The second matrix is : ")
+for row in list2 :
+	print(row)
+print("Result is : ")
+for row in list3:
+	print(row)
