@@ -38,7 +38,7 @@ def inputLocation():
 	return (x,y)
 
 def inputPlayer():
-	player = input("DO you want to be X or Y: ")
+	player = input("You are X or Y: ")
 	return player
 
 def winner(board):
