@@ -54,7 +54,7 @@ def coins(coin):
 
 def make_change(total_charge,payment):
 	c = round((payment - total_charge),2)
-	print("The change is :", c)
+	print("The change is :$%.2f" % c)
 	bill = int(c //1)
 	coin = int(str(c).split(".")[1])
 	b_tuple = bills(bill)
@@ -66,4 +66,6 @@ charge = float(input("Please enter the amount of bill: "))
 pay = float(input("Please enter the payment: "))
 
 change=make_change(charge,pay)
-print("The bills are : {} hundred, {} fifties, {} twenty, {} ten, {} fives, {} singles. The coins are:  {} quarters, {} dimes, {} nickel, {} pennies".format(change[0][5],change[0][4],change[0][3],change[0][2],change[0][1],change[0][0],change[1][3],change[1][2],change[1][1],change[1][0]))
+print(change)
+print("The bills are : {} hundred, {} fifties, {} twenty, {} ten, {} fives, {} singles.".format(change[0][5],change[0][4],change[0][3],change[0][2],change[0][1],change[0][0]))
+print("The coins are:  {} quarters, {} dimes, {} nickel, {} pennies".format(change[1][3],change[1][2],change[1][1],change[1][0]))
