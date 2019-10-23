@@ -26,11 +26,19 @@ for i in range(dim):
 	list3.append(temp)
 
 print("The first matrix is : ")
-for row in list1:
-	print(row)
+for row in range(dim):
+	for col in range(dim):
+		print(list1[row][col], end = " " )
+	print()
+
 print("The second matrix is : ")
-for row in list2:
-	print(row)
-print("Result is : ")
-for row in list3 :
-	print(row)
+for row in range(dim):
+	for col in range(dim):
+		print(list2[row][col], end = " ")
+	print()
+
+print("The result of addition is : ")
+for row in range(dim) :
+	for col in range(dim):
+		print(list3[row][col], end = " " )
+	print()

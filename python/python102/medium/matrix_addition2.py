@@ -27,11 +27,17 @@ for i in range(n):
 	list3.append(temp)
 
 print("The first matrix is : ")
-for row in list1:
-	print(row)
+for row in range(n):
+	for col in range(m):
+		print(list1[row][col], end= " ")
+	print()
 print("The second matrix is : ")
-for row in list2 :
-	print(row)
-print("Result is : ")
-for row in list3:
-	print(row)
+for row in range(n):
+	for col in range(m):
+		print(list2[row][col], end = " ")
+	print()
+print("The result of addition is : ")
+for row in range(n):
+	for col in range(m):
+		print(list3[row][col], end = " ")
+	print()
