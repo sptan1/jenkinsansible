@@ -1,4 +1,4 @@
-- name: Echo Hello World
+- name: Echo Hello world
   hosts: 127.0.0.1
   connection: local
 
